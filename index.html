@@ -4,24 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>zarisa site</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="simplestyle.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="fontawesome-free-6.1.2-web/css/all.min.css" rel="stylesheet">
     <link href="fontawesome-free-6.1.2-web/js/all.min.js" rel="stylesheet">
-
     <meta name="viewport" content="width=device-width,initial-scale-1">
-
     <script src="js/bootstrap.bundle.min.js" rel="stylesheet"></script>
 
 </head>
 
-<body>
+<body style="overflow-x:hidden">
     <header>
         <!-- navbar.......................-->
         <nav class="navbar bg-dark navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="C:\Users\pr\Desktop\simpleSite\images\organic-3.png"
-                        alt="hamharahan logo"></a>
+                        alt="hamkarahan logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -29,32 +27,34 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">galery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="C:\Users\pr\Desktop\simpleSite\registerationForm.html">register</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- slider................. -->
+        <!-- carousel................. -->
         <div class="row ">
             <div class="col-12 col-md-12 col-sm-12">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                    <div class="carousel-inner"> 
                         <div class="carousel-item active">
-                            <img src="images/images.jpg" class="d-block w-100" alt="...">
+                            <img src="images/1.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/images.jpg" class="d-block w-100" alt="...">
+                            <img src="images/2.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/images.jpg" class="d-block w-100" alt="...">
+                            <img src="images/3.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -74,11 +74,11 @@
     <main class="container">
 
     </main>
-    <footer>
-        <div class="row">
+    <footer >
+        <div class="row "  >
 
             <div class="col-md-4 col-12 col-sm-4">
-                <p>
+                <p class="footer-text">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur distinctio repudiandae
                     recusandae sint incidunt at repellat totam placeat officia, non enim esse illum provident asperiores
                     blanditiis quasi quo, iusto reiciendis!
@@ -88,19 +88,22 @@
 
             <div class="col-md-4 col-12 col-sm-4">
 
-                <p>
-                <ul>
+                
+                <ul  class="footer-text">
                     <li type="none">
-                        <a href="#" style="text-decoration:none ;"><i class="	fab fa-instagram"></i>
+                        <a href="#"><i class="	fab fa-instagram"></i>
                             <span>Instagram</span></a>
                     </li>
 
+                    <li type="none">
+                        <a href="#"><i class="	fab fa-telegram"></i>
+                            <span>telegram</span></a>
+                    </li>
                 </ul>
-                </p>
+               
             </div>
-            <div class="col-md-4 col-12 col-sm-4">
-
-                <p>
+            <div class="col-md-4 col-12 col-sm-4 ">
+                <p class="footer-text"> 
                     sampel
                 </p>
             </div>
