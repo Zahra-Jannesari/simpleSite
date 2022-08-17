@@ -1,21 +1,22 @@
-
 a {
-    text-decoration: none!important;
-    color: white!important;
+    text-decoration: none !important;
+    color: white !important;
 }
 
 .btn-primary.test {
-    border-radius: 5px!important;
+    border-radius: 5px !important;
 }
 
-p{
+p {
     text-align: justify;
 }
+
 ul {
-    padding: 0px!important;
-  }
+    padding: 0px !important;
+}
+
 footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -23,30 +24,80 @@ footer {
     text-align: center;
     font-size: 12px;
     padding: 15px;
-    background-color:rgb(175, 77, 31)!important;
-  }
+    background-color: rgb(175, 77, 31) !important;
+}
 
- 
-  /* Extra small devices (phones, 600px and down) */
+
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .footer-text{
+    .footer-text {
         text-align: justify;
-      
-            }
+
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .footer-text{
+    .footer-text {
         text-align: justify;
-            }
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+    .mobile-menu {
+        display: none !important;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 1200px) {
+    .mobile-menu {
+        display: none !important;
+    }
+}
+
+
+/* --------------------gallery----------------- */
+.gallery-header-background {
+    background-image: url('images/g-header.jpg');
+    height: 194px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-header-text {
+    display: block;
+    text-align: center;
+    position: relative;
+    font-size: 0;
+    line-height: 1;
+}
+
+
+
+/* ------------------mobile footer--------------- */
+.mobile-menu {
+    position: -webkit-sticky;
+    /* Safari */
+    bottom: 0;
+    position: sticky;
+    background-color: rgb(33, 37, 41)
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+}
+
+.flex-container>div {
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
