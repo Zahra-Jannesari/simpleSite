@@ -79,6 +79,24 @@ footer {
 }
 
 
+@media only screen and (max-width: 767px) {
+    .gallery-header-text .page-title {
+        font-size: 28px !important;
+    }
+}
+
+.gallery-header-text .page-title {
+    display: inline-block;
+    position: absolute;
+    top: 29%;
+    right: 0;
+    left: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 0;
+}
+
 
 /* ------------------mobile footer--------------- */
 .mobile-menu {
@@ -86,18 +104,20 @@ footer {
     /* Safari */
     bottom: 0;
     position: sticky;
-    background-color: rgb(33, 37, 41)
+    background-color: rgb(33, 37, 41);
+    display: table-cell
 }
 
 .flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: DodgerBlue;
+    display: inline-flex;
+    flex-wrap: wrap;
+    --bs-gutter-x: 0!important;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .flex-container>div {
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 20px;
 }
